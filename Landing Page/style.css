@@ -1,0 +1,198 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: #eee;
+    width: 100%;
+    top: 0;
+    justify-content: space-between;
+}
+
+#header-img {
+    max-width: 75px;
+    max-height: auto;
+}
+
+
+
+li {
+    display: inline;
+}
+
+.nav-link {
+    display: inline-block;
+    text-align: center;
+    padding: 16px;
+    font-weight: 400;
+}
+
+.main {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+form h2 {
+    margin: 10px;
+}
+
+.f-ele {
+    margin: 10px;
+}
+
+input[type='email'] {
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+    margin: 10px;
+}
+
+input[type='submit'] {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: cadetblue;
+    color: #eee;
+    border-radius: 2px;
+}
+
+#features {
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+
+#features .grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#features .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: darkorange;
+}
+
+#features .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+}
+
+#Pricing {
+    display: flex;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 10px;
+    text-align: center;
+    font-family: arial;
+  }
+
+.card h3 {
+    background-color: lightgray;
+    padding: 10px;
+    margin-bottom: 10px;
+} 
+  .price {
+    color: grey;
+    font-size: 22px;
+    margin: 20px;
+  }
+
+.card p {
+    padding: 10px;
+}
+
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+footer {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: lightgrey;
+    padding: 16px;
+}
+
+footer ul, li {
+    margin: 10px;
+    font-weight: 600;
+
+}
+
+footer p {
+    font-size: 12px;
+    text-align: start;
+}
+
+/* Media queries */
+
+@media (max-width: 600px) {
+    #features .desc {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        height: 150px;
+    }
+    #features .icon {
+        display: none;
+    }
+    #features {
+        margin-top: 0;
+    }
+    #Pricing {
+        display: flex;
+        flex-direction: column;
+    }
+}
